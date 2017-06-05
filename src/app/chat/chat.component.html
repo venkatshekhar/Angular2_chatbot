@@ -1,0 +1,22 @@
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome to Chat, Ask you Questions we will provide you best Solutions <b></b></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="chatbox" >
+      <div *ngFor="let chatMessage of messages">
+        <div id="question" class="questionCls"  *ngIf="chatMessage.sentBy =='User'">
+          {{chatMessage.message}}  <img class="chatContainer_image border-image" src="./assets/user_icon.jpg">
+      </div>
+      <div id="answer" class="answerCls" *ngIf="chatMessage.sentBy !=='User'">
+        <img class="chatContainer_image border-image" src="./assets/computer_icon.png">{{chatMessage.message}}
+      </div>
+      </div>
+    </div>
+     
+    <div  class="inputContainer">
+        <input type="text" id="usermsg"  [(ngModel)]="userInputMessage">        
+        <input name="submitmsg" type="button" id="submitmsg" value="Send" (click)="onFormSubmit($event)" />
+    </div>
+</div>
