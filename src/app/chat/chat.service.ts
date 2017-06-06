@@ -18,7 +18,7 @@ export class ChatService {
       let headers = new Headers({ 'Content-Type': 'application/json' });
       let options = new RequestOptions({ headers: headers });
       var payload = { 
-        workspace_id: "a594aa89-2804-4f56-875d-c08565bcfac1",
+        workspace_id: "fe106e18-bd3d-474a-8367-a4d630daa831",
         context: {},
         input: {"text": message} || {}
       };
