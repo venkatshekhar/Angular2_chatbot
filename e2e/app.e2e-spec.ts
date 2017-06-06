@@ -1,10 +1,10 @@
-import { ChatAppPage } from './app.po';
+import { AngularChatBotPage } from './app.po';
 
-describe('chat-app App', () => {
-  let page: ChatAppPage;
+describe('angular-chat-bot App', function() {
+  let page: AngularChatBotPage;
 
   beforeEach(() => {
-    page = new ChatAppPage();
+    page = new AngularChatBotPage();
   });
 
   it('should display message saying app works', () => {

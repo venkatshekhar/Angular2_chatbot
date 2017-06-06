@@ -13,7 +13,8 @@ import { ChatComponent } from './chat/chat.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule, ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [],
